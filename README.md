@@ -6,6 +6,8 @@ Generate private key and its associated ethereum address
 
 These instructions will provide you a copy of the module and run in your application so that the clients can create their own private keys and ethereum compliance addresses.
 
+This is a fork of node-eth-address, but it uses pure Javascript, does not rely on scrypt package, which has problem deploying to Azure App Service.
+
 ### Prerequisites
 
 ```
@@ -16,7 +18,7 @@ npm
 ### Installation
 
 ```
-npm install node-eth-address --save
+npm install pure-node-eth-address --save
 ```
 
 ## Usage
@@ -24,7 +26,7 @@ npm install node-eth-address --save
 ### getDefaultAddress()
 
 ```
-var nodeEth = require('node-eth-address');
+var nodeEth = require('pure-node-eth-address');
 
 /** 
 This password encrypts your private key. This does not act as a seed 
@@ -133,7 +135,7 @@ var privateKey = nodeEth.recoverPrivateKey(password,keyStore);
 
 ## Author
 
-* **[Vinay Singh](https://github.com/rkgitvinay)**
+* **[Huan Liu](https://github.com/drhuanliu)**
 
 ## License
 
