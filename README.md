@@ -1,4 +1,4 @@
-# Ethereum Address Generator - Node
+# Ethereum Address Generator - Pure Node.js
 
 Generate private key and its associated ethereum address
 
