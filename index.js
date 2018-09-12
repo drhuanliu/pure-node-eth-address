@@ -1,4 +1,4 @@
-'use strict';
+//'use strict';
 
 var keythereum = require("keythereum");
 var ethers = require('ethers');
