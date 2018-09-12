@@ -33,7 +33,7 @@ var getDefaultAddress = (password) => {
 	  kdfparams: {
 	  	memory: 280000000,
 	    dklen: 32,
-	    n:262144,
+	    n:4096,
 	    r:1,
 	    p:8
 	  }
