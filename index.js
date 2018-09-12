@@ -26,14 +26,16 @@ var getDefaultAddress = (password) => {
 	var rawData = keythereum.create(params);
 	
 	/* default parameters */
-	var kdf = "pbkdf2";
+	var kdf = "scrypt";
 	var options = {
-	  kdf: "pbkdf2",
+	  kdf: "scrypt",
 	  cipher: "aes-128-ctr",
 	  kdfparams: {
-	    c: 262144,
+	  	memory: 280000000,
 	    dklen: 32,
-	    prf: "hmac-sha256"
+	    n:262144,
+	    r:1,
+	    p:8
 	  }
 	};
 
